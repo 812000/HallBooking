@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
 
 export const sendEmailConfirmation = async (email, event_name, event_organizer, date, hall_name) => {
     const mailOptions = {
-        from: "sridhar16701@gmail.com",
+        from: "yet to add",
         to: email,
         subject: `Booking Confirmation for ${event_name}`,
         text: `Hello ${event_organizer},\n\nYour booking for the event "${event_name}" on ${date} has been successfully confirmed.\n\nThank you for choosing ${hall_name}!\n\nBest regards,\nEvent Hall Booking Team`,
